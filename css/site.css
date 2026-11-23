@@ -1,8 +1,8 @@
 /* BotsWeb Solutions site styles.
    Look: cobalt blue panels, white data cards, CSS glass shapes, Manrope headlines, navy footer.
    Every colour, font and size comes from tokens.css. */
-@import url("./tokens.css?v=202611232249");
-@import url("./base.css?v=202611232249");
+@import url("./tokens.css?v=202611231721");
+@import url("./base.css?v=202611231721");
 
 /* ---------- Page ---------- */
 body { background: var(--color-paper); }
@@ -634,3 +634,5 @@ textarea.input { min-height: 140px; padding: var(--space-sm) var(--space-md); li
 /* Uniform running text: every paragraph, table cell and plain list item in page content
    uses one size and line height. Display text (marquee, mission quote) and pills keep their own. */
 main :is(p, td, dd, li:not([class])):not(.marquee, .mv__quote, .kicker, .stat-chip, .tags *, .hero-card__stats *):not(#\#) { font-size: var(--text-md); line-height: 1.65; }
+/* Footer dividers: clearly visible on navy */
+.footer nav[aria-label="Footer"], .footer__base { border-color: var(--color-footer-rule); }
