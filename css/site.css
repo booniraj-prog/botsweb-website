@@ -604,3 +604,16 @@ textarea.input { min-height: 140px; padding: var(--space-sm) var(--space-md); li
 .hero-card__stats { grid-row: 2; }
 .hero-card .hero-photo { grid-row: 1 / span 2; width: min(100%, 340px); }
 @media (max-width: 60rem) { .hero-card { grid-template-rows: auto; } .hero-card .hero-photo { grid-row: auto; width: 100%; } }
+
+/* Footer: full-width strip, compact */
+.site-footer { margin-top: var(--space-xl); padding-top: 0; background: var(--color-navy); }
+.footer { background: none; border-radius: 0; padding: var(--space-xl) 0 var(--space-md); gap: var(--space-md); }
+.footer .wordmark { padding: var(--space-xs) var(--space-md); }
+.footer .wordmark img { height: 40px; width: auto; }
+.footer__lead { font-size: var(--text-sm); margin-top: calc(var(--space-xs) * -1); }
+.info-cards li { padding: var(--space-sm) var(--space-md); gap: var(--space-sm); }
+.info-cards .icon-dot { width: 38px; height: 38px; }
+.info-cards .icon-dot svg { width: 18px; height: 18px; }
+.info-cards b { font-size: var(--text-sm); }
+.footer__base { padding-top: var(--space-md); align-items: center; }
+@media (max-width: 60rem) { .footer { padding: var(--space-xl) 0 var(--space-md); } }
