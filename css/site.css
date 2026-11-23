@@ -617,3 +617,14 @@ textarea.input { min-height: 140px; padding: var(--space-sm) var(--space-md); li
 .info-cards b { font-size: var(--text-sm); }
 .footer__base { padding-top: var(--space-md); align-items: center; }
 @media (max-width: 60rem) { .footer { padding: var(--space-xl) 0 var(--space-md); } }
+
+/* Footer social icons */
+.social { gap: var(--space-xs); }
+.social a { justify-content: center; width: 40px; height: 40px; min-height: 0; padding: 0; border-radius: var(--radius-pill); border: 1px solid var(--color-navy-rule); background: var(--color-night-glass); color: var(--color-night-ink); transition: background-color var(--dur-short) var(--ease-out), border-color var(--dur-short) var(--ease-out), transform var(--dur-short) var(--ease-out); }
+.social li:first-child a { background: var(--color-night-glass); border-color: var(--color-navy-rule); color: var(--color-night-ink); }
+.social a:hover { background: var(--color-accent); border-color: var(--color-accent); color: var(--color-accent-ink); transform: translateY(-2px); }
+.social svg { width: 18px; height: 18px; }
+@media (prefers-reduced-motion: reduce) { .social a:hover { transform: none; } }
+/* Keep the social icons clear of the floating WhatsApp button */
+.footer { padding-bottom: calc(var(--space-md) + 72px); }
+@media (max-width: 60rem) { .footer { padding-bottom: calc(var(--space-md) + 72px); } }
