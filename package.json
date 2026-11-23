@@ -5,6 +5,7 @@
   "description": "BotsWeb Solutions marketing website: static HTML, CSS and JS.",
   "type": "module",
   "scripts": {
-    "start": "node server.mjs"
+    "start": "node server.mjs",
+    "publish": "node scripts/publish.mjs"
   }
 }

@@ -20,6 +20,14 @@ Then open http://localhost:5173. Save a file and refresh the browser to see your
 | `css/base.css` | Shared resets. Rarely needs changes. |
 | `js/site.js` | Scroll reveal, the services tab switcher, form validation, contact goal to service sync, and the floating WhatsApp button (change `WHATSAPP_NUMBER` and `WHATSAPP_MESSAGE` near the end of the file). |
 
+## Publish changes to the demo
+
+```powershell
+npm run publish -- "What changed"
+```
+
+This stamps a new version on the CSS and JS links (so browsers that visited before load the new styles), commits, and pushes. The demo updates about a minute later at https://booniraj-prog.github.io/botsweb-website/.
+
 ## Before going live
 
 - **Forms:** the contact and newsletter forms aren't connected yet. Add your form or CRM endpoint URL to `data-endpoint=""` on each `<form>`. Until you do, they say "Nothing was sent" and don't pretend to succeed.
